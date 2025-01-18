@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cybercare"
+version = "0.1.0"
+description = "Task for Cyber Care"
+authors = ["Remigijus"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.10.5"
+python-dotenv = "^1.0.1"
+pymongo = "^4.10.1"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+pre-commit = "^4.0.1"
+pytest = "^8.3.4"
+starlette-testclient = "^0.4.1"
+httpx = "^0.28.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
