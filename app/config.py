@@ -13,6 +13,7 @@ class Config(NamedTuple):
     MONGO_DB_HOST: str = getenv("MONGO_DB_HOST", "localhost")
     MONGO_DB_PORT: int = getenv("MONGO_DB_PORT", 27017)
     MONGO_DB_NAME: str = getenv("MONGO_DB_NAME", "EVENTS")
+    LOG_LEVEL: str = getenv("LOG_LEVEL", "INFO")
 
 
 CONFIG = Config()

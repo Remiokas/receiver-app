@@ -20,3 +20,9 @@ run:
 
 pre-commit:
 	poetry run pre-commit run --all-files;
+
+lint:
+	black app;
+	black tests;
+	flake8 app;
+	flake8 tests;

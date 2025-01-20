@@ -17,9 +17,16 @@ pre-commit = "^4.0.1"
 pytest = "^8.3.4"
 starlette-testclient = "^0.4.1"
 httpx = "^0.28.1"
+mock = "^5.1.0"
+pytest-mock = "^3.14.0"
+pytest-asyncio = "^0.25.2"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false

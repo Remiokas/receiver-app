@@ -5,14 +5,14 @@ repos:
         name: black (local)
         entry: poetry run black
         language: system
-        args: [app]
+        args: [app, tests]
         types: [python]
 
       - id: flake8
         name: flake8 (local)
         entry: poetry run flake8
         language: system
-        args: [app]
+        args: [app, tests]
         types: [python]
 
       - id: pytest-check
