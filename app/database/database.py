@@ -6,7 +6,7 @@ from app.config import CONFIG
 
 async def init_db() -> Database:
     client = MongoClient(
-        f"mongodb://{CONFIG.MONGO_DB_HOST}:{CONFIG.MONGO_DB_PORT}",
+        CONFIG.MONGO_URL,
         uuidRepresentation="standard",
     )
     return client[CONFIG.MONGO_DB_NAME]
@@ -14,6 +14,6 @@ async def init_db() -> Database:
 
 async def close_db():
     MongoClient(
-        f"mongodb://{CONFIG.MONGO_DB_HOST}:{CONFIG.MONGO_DB_PORT}",
+        CONFIG.MONGO_URL,
         uuidRepresentation="standard",
     ).close()

@@ -3,7 +3,7 @@ include .env
 PORT=${EVENT_CONSUMER_PORT}
 
 export-requirements:
-	poetry export --output requirements.txt --without-hashes
+	poetry export --output requirements.txt --without-hashes;
 
 install:
 	python 3.11 -m venv venv; \
